@@ -32,6 +32,7 @@ export default {
       },
       fontSize: {
         "footer": ["18px", "1.5"],
+        "footertablet": ["1.5rem", "1.2"],
       },
       fontWeight: {
         "heading-1": "500",

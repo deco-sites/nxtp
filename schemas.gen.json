@@ -334,6 +334,13 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@NavItem[]",
           "title": "Nav Items"
         },
+        "navSocials": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@NavItem"
+          },
+          "title": "Nav Socials"
+        },
         "mainTitle": {
           "type": "string",
           "title": "Main Title"
@@ -348,6 +355,7 @@
         "desktopBackground",
         "logoSvg",
         "navItems",
+        "navSocials",
         "mainTitle",
         "subTitle"
       ],
@@ -564,6 +572,54 @@
             "deco-sites/nxtp/functions/LoadGitHubRaw.ts"
           ],
           "default": "deco-sites/nxtp/functions/LoadGitHubRaw.ts"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL0hlYWRlci50c3g=": {
+      "title": "./islands/Header.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Header.tsx"
+          ],
+          "default": "./islands/Header.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL01lbnVCdXR0b24udHN4": {
+      "title": "./islands/MenuButton.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/MenuButton.tsx"
+          ],
+          "default": "./islands/MenuButton.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL05hdmJhci50c3g=": {
+      "title": "./islands/Navbar.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Navbar.tsx"
+          ],
+          "default": "./islands/Navbar.tsx"
         }
       }
     },
@@ -1003,6 +1059,23 @@
         }
       ]
     },
+    "islands": {
+      "title": "islands",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL01lbnVCdXR0b24udHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL05hdmJhci50c3g="
+        }
+      ]
+    },
     "handlers": {
       "title": "handlers",
       "anyOf": [
@@ -1126,6 +1199,9 @@
         "anyOf": [
           {
             "$ref": "#/root/functions"
+          },
+          {
+            "$ref": "#/root/islands"
           },
           {
             "$ref": "#/root/handlers"

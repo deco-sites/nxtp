@@ -6,6 +6,9 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
+import * as $$$$$0 from "./islands/Header.tsx";
+import * as $$$$$1 from "./islands/MenuButton.tsx";
+import * as $$$$$2 from "./islands/Navbar.tsx";
 import * as $$$$$$$$0 from "./sections/Footer.tsx";
 import * as $$$$$$$$1 from "./sections/GetStarted.tsx";
 import * as $$$$$$$$2 from "./sections/Head.tsx";
@@ -49,6 +52,11 @@ const manifest = {
     "./routes/live/previews/[...block].tsx": $live_previews,
     "./routes/[...catchall].tsx": $live_catchall,
   },
+  "islands": {
+    "./islands/Header.tsx": $$$$$0,
+    "./islands/MenuButton.tsx": $$$$$1,
+    "./islands/Navbar.tsx": $$$$$2,
+  },
   "sections": {
     "deco-sites/nxtp/sections/Footer.tsx": $$$$$$$$0,
     "deco-sites/nxtp/sections/GetStarted.tsx": $$$$$$$$1,
@@ -78,7 +86,6 @@ const manifest = {
     "$live/flags/audience.ts": i1$$$$$0,
     "$live/flags/everyone.ts": i1$$$$$1,
   },
-  "islands": {},
   "config": config,
   "baseUrl": import.meta.url,
 };

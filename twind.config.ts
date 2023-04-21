@@ -17,6 +17,7 @@ const options: Omit<Options, "selfURL"> = {
         "footer": "#323940",
         "hoverlogo": "#30c0dc",
         transparent: "transparent",
+        "mobile-menu-bg": "rgba(50,57,63,.7)",
       },
       textColor: {
         "default": "#FFFFFF",
@@ -35,6 +36,7 @@ const options: Omit<Options, "selfURL"> = {
         "footer": ["18px", "1.5"],
         "mobile-title": ["2.8rem", "122.6%"],
         "mobile-sub-title": ["1.8rem", "122.6%"],
+        "footertablet": ["1.5rem", "1.2"],
       },
       fontWeight: {
         "main-title": "700",
@@ -43,6 +45,14 @@ const options: Omit<Options, "selfURL"> = {
       },
     },
   },
+  preflight: (preflight) => ({
+    ...preflight,
+    // Prevent scroll when modal is open
+    "body.no-scroll": {
+      overflow: "hidden",
+      height: "100vh",
+    },
+  }),
   plugins: {
     "welcome-container": {
       margin: "auto auto 20%",
@@ -90,6 +100,30 @@ const options: Omit<Options, "selfURL"> = {
       "transition": "box-shadow .15s ease-in-out",
       "font-size": "1.5rem",
       "outline": "none",
+    },
+    "x-p-calc": {
+      "padding-right": "calc(1.5rem*.5)",
+      "padding-left": "calc(1.5rem*.5)",
+    },
+    "btn-close": {
+      background:
+        `transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") 50%/1em auto no-repeat`,
+      width: "1em",
+      height: "1em",
+      color: "#000",
+      opacity: "0.5",
+      "box-sizing": "content-box",
+      "font-size": "1.5rem",
+    },
+    "btn-close-white": {
+      filter: `invert(1) grayscale(100%) brightness(200%)`,
+    },
+    "backdrop-blur": {
+      "backdrop-filter": "blur(6px)",
+      "background": "rgba(50,57,63,.7)",
+    },
+    "border-socials": {
+      "border-bottom": "1.22989px solid #9e9e9e",
     },
   },
 };

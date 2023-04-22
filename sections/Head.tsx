@@ -62,6 +62,7 @@ export default function HeadComponent({
             font-weight: 300;
             font-display: swap;
             src: url(/fonts/IBMPlexSans-Light.ttf) format('truetype');
+            unicode-range: U+000-5FF; /* Latin glyphs */
           }
           @font-face {
             font-family: 'IBM Plex Sans';
@@ -69,6 +70,7 @@ export default function HeadComponent({
             font-weight: 500;
             font-display: swap;
             src: url(/fonts/IBMPlexSans-Medium.ttf) format('truetype');
+            unicode-range: U+000-5FF; /* Latin glyphs */
           }
           @font-face {
             font-family: 'IBM Plex Sans';
@@ -76,6 +78,7 @@ export default function HeadComponent({
             font-weight: 700;
             font-display: swap;
             src: url(/fonts/IBMPlexSans-Bold.ttf) format('truetype');
+            unicode-range: U+000-5FF; /* Latin glyphs */
           }
           @font-face {
             font-family: 'DIN-Next-LT-Pro';
@@ -83,9 +86,131 @@ export default function HeadComponent({
             font-weight: 400;
             font-display: swap;
             src: url(/fonts/DIN-Next-LT-Pro-Regular.ttf) format('truetype');
+            unicode-range: U+000-5FF; /* Latin glyphs */
           }
+
           html {
-            font-size: 12px;
+            font-size: 8px;
+          }
+
+          body {
+            -webkit-text-size-adjust: 100%;
+          }
+        
+          @media screen and (min-width: 320px) {
+              html {
+                  font-size:calc(8px + 8 * ((100vw - 320px) / 880));
+              }
+          }
+        
+          @media screen and (min-width: 1100px) {
+              html {
+                  font-size:12px;
+              }
+          }
+
+          .welcome-title-draw {
+            position: relative;
+          }
+
+          .welcome-title-draw::after {
+            content: "";
+            background-image: url('/circle-effect.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: -50%;
+            top: -15%;
+            width: 230px;
+            height: 119px;
+          }
+
+          @media (max-width: 570px) {
+            .welcome-title-draw::after {
+              width: 9rem;
+              left: -49%;
+              top: -11%
+            }
+          }
+
+          @media (max-width: 940px) {
+            .welcome-title-draw::after {
+              width: 115px;
+              height: 60px;
+              left: -40%;
+              top: -11%
+            }
+          }
+
+          @media (max-width: 839px) {
+            .welcome-title-draw::after {
+              width:115px;
+              height: 60px;
+              left: -56%;
+              top: -11%
+            }
+          }
+
+          @media (max-width: 719px) {
+            .welcome-title-draw::after {
+              width:115px;
+              height: 60px;
+              left: -73%;
+              top: -11%
+            }
+          }
+
+          @media (max-width: 560px) {
+            .welcome-title-draw::after {
+              width:80px;
+              height: 60px;
+              left: -45%;
+              top: -11%
+            }
+          }
+
+          @media (min-width: 939px) {
+            .welcome-title-draw::after {
+              width: 115px;
+              height: 60px;
+              left: -31%;
+              top: -5%
+            }
+          }
+
+          @media (min-width: 1100px) and (min-aspect-ratio:1/2) {
+            .welcome-title-draw::after {
+              left: -37%;
+              top: -9%;
+              width: 150px;
+              height: 119px
+            }
+          }
+
+          @media (min-width: 1230px) and (min-aspect-ratio:1/2) {
+            .welcome-title-draw::after {
+              left: -37%;
+              top: -9%;
+              width: 150px
+            }
+          }
+
+          @media (min-width: 1430px) and (min-aspect-ratio:1/2) {
+            .welcome-title-draw::after {
+              left: -42%;
+              top: -5%;
+              width: 190px;
+              height: 119px
+            }
+          }
+
+          @media (min-width: 1600px) and (min-aspect-ratio:1/2) {
+            .welcome-title-draw::after {
+              left: -30%;
+              top: -7%;
+              width: 210px;
+              height: 119px
+            }
           }
       `,
         }}

@@ -6,9 +6,14 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
+import * as $$$$$0 from "./islands/Header.tsx";
+import * as $$$$$1 from "./islands/MenuButton.tsx";
+import * as $$$$$2 from "./islands/Navbar.tsx";
+import * as $$$$$3 from "./islands/Welcome.tsx";
 import * as $$$$$$$$0 from "./sections/Footer.tsx";
 import * as $$$$$$$$1 from "./sections/GetStarted.tsx";
 import * as $$$$$$$$2 from "./sections/Head.tsx";
+import * as $$$$$$$$3 from "./sections/Presentation.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -48,10 +53,17 @@ const manifest = {
     "./routes/live/previews/[...block].tsx": $live_previews,
     "./routes/[...catchall].tsx": $live_catchall,
   },
+  "islands": {
+    "./islands/Header.tsx": $$$$$0,
+    "./islands/MenuButton.tsx": $$$$$1,
+    "./islands/Navbar.tsx": $$$$$2,
+    "./islands/Welcome.tsx": $$$$$3,
+  },
   "sections": {
     "deco-sites/nxtp/sections/Footer.tsx": $$$$$$$$0,
     "deco-sites/nxtp/sections/GetStarted.tsx": $$$$$$$$1,
     "deco-sites/nxtp/sections/Head.tsx": $$$$$$$$2,
+    "deco-sites/nxtp/sections/Presentation.tsx": $$$$$$$$3,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {
@@ -76,7 +88,6 @@ const manifest = {
     "$live/flags/audience.ts": i1$$$$$0,
     "$live/flags/everyone.ts": i1$$$$$1,
   },
-  "islands": {},
   "config": config,
   "baseUrl": import.meta.url,
 };

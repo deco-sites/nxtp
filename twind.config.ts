@@ -7,8 +7,9 @@ const options: Omit<Options, "selfURL"> = {
         sm: "576px",
         md: "768px",
         lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
+        xl: "1230px",
+        "2xl": "1430px",
+        "3xl": "1600px",
       },
       colors: {
         primary: "#2FD180",
@@ -19,6 +20,9 @@ const options: Omit<Options, "selfURL"> = {
         "hoverlogo": "#30c0dc",
         transparent: "transparent",
         "mobile-menu-bg": "rgba(50,57,63,.7)",
+      },
+      backgroundImage: {
+        "gradient-line": "linear-gradient(#9cf9ff 100%, #fff 0)",
       },
       textColor: {
         "default": "#FFFFFF",
@@ -52,6 +56,11 @@ const options: Omit<Options, "selfURL"> = {
   },
   preflight: (preflight) => ({
     ...preflight,
+    "@property --num": {
+      "syntax": "<integer>",
+      "initial-value": "0",
+      "inherits": "false",
+    },
     // Prevent scroll when modal is open
     "body.no-scroll": {
       overflow: "hidden",
@@ -77,9 +86,20 @@ const options: Omit<Options, "selfURL"> = {
     },
     "welcome-container-sm": {
       height: "86vh",
+      width: "100%",
       "max-height": "120vh",
       display: "flex",
       "flex-direction": "column",
+      padding: "1.5rem 0 5% 16.66666667%",
+      margin: "0",
+    },
+    "writing-vertical-rl": {
+      "ms-writing-mode": "tb-rl",
+      "writing-mode": "vertical-rl",
+    },
+    "writing-mode-none": {
+      "ms-writing-mode": "unset",
+      "writing-mode": "unset",
     },
     "toggler-icon": {
       "display": "inline-block",
@@ -91,6 +111,9 @@ const options: Omit<Options, "selfURL"> = {
       "vertical-align": "middle",
       "width": "1.5em",
       "height": "1.5em",
+    },
+    "text-webkit-center": {
+      "text-align": "-webkit-center",
     },
     "btn-navbar-toggler": {
       color: "rgba(255,255,255,.55)",

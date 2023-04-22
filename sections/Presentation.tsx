@@ -1,6 +1,5 @@
-import Image from "deco-sites/std/components/Image.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import { NavItem } from "../types/index.ts";
+import { NavItem, WelcomeCounter } from "../types/index.ts";
 import Welcome from "../islands/Welcome.tsx";
 
 export interface Props {
@@ -11,6 +10,7 @@ export interface Props {
   navSocials: NavItem[];
   mainTitle: string;
   subTitle: string;
+  counters: WelcomeCounter[];
 }
 
 export default function Presentation(

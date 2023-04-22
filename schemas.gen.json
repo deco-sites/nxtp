@@ -74,6 +74,36 @@
       },
       "title": "NavItem[]"
     },
+    "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomeCounter": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "number",
+          "title": "Number"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "usePlusIcon": {
+          "type": "boolean",
+          "title": "Use Plus Icon"
+        }
+      },
+      "required": [
+        "number",
+        "text",
+        "usePlusIcon"
+      ],
+      "title": "WelcomeCounter"
+    },
+    "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomeCounter[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomeCounter"
+      },
+      "title": "WelcomeCounter[]"
+    },
     "ZGVjby1zaXRlcy9ueHRwXGNvbXBvbmVudHNcV2VsY29tZS50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -107,6 +137,10 @@
         "subTitle": {
           "type": "string",
           "title": "Sub Title"
+        },
+        "counters": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomeCounter[]",
+          "title": "Counters"
         }
       },
       "required": [
@@ -116,7 +150,8 @@
         "navItems",
         "navSocials",
         "mainTitle",
-        "subTitle"
+        "subTitle",
+        "counters"
       ],
       "title": "deco-sites/nxtp\\components\\Welcome.tsx@Props"
     },
@@ -394,6 +429,10 @@
         "subTitle": {
           "type": "string",
           "title": "Sub Title"
+        },
+        "counters": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomeCounter[]",
+          "title": "Counters"
         }
       },
       "required": [
@@ -403,7 +442,8 @@
         "navItems",
         "navSocials",
         "mainTitle",
-        "subTitle"
+        "subTitle",
+        "counters"
       ],
       "title": "deco-sites/nxtp\\sections\\Presentation.tsx@Props"
     },

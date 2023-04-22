@@ -104,6 +104,54 @@
       },
       "title": "WelcomeCounter[]"
     },
+    "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomePortfolioSlide": {
+      "type": "object",
+      "properties": {
+        "logoSvg": {
+          "type": "string",
+          "title": "Logo Svg"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        }
+      },
+      "required": [
+        "logoSvg",
+        "text",
+        "image"
+      ],
+      "title": "WelcomePortfolioSlide"
+    },
+    "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomePortfolioSlide[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomePortfolioSlide"
+      },
+      "title": "WelcomePortfolioSlide[]"
+    },
+    "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@TWelcomePortfolio": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "slides": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomePortfolioSlide[]",
+          "title": "Slides"
+        }
+      },
+      "required": [
+        "title",
+        "slides"
+      ],
+      "title": "TWelcomePortfolio"
+    },
     "ZGVjby1zaXRlcy9ueHRwXGNvbXBvbmVudHNcV2VsY29tZS50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -141,6 +189,10 @@
         "counters": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomeCounter[]",
           "title": "Counters"
+        },
+        "portfolio": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@TWelcomePortfolio",
+          "title": "Portfolio"
         }
       },
       "required": [
@@ -151,7 +203,8 @@
         "navSocials",
         "mainTitle",
         "subTitle",
-        "counters"
+        "counters",
+        "portfolio"
       ],
       "title": "deco-sites/nxtp\\components\\Welcome.tsx@Props"
     },
@@ -433,6 +486,10 @@
         "counters": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomeCounter[]",
           "title": "Counters"
+        },
+        "portfolio": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@TWelcomePortfolio",
+          "title": "Portfolio"
         }
       },
       "required": [
@@ -443,7 +500,8 @@
         "navSocials",
         "mainTitle",
         "subTitle",
-        "counters"
+        "counters",
+        "portfolio"
       ],
       "title": "deco-sites/nxtp\\sections\\Presentation.tsx@Props"
     },

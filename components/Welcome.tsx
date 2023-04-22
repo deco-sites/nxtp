@@ -1,7 +1,8 @@
 import { useEffect, useState } from "preact/hooks";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import { NavItem, WelcomeCounter } from "../types/index.ts";
+import { NavItem, TWelcomePortfolio, WelcomeCounter } from "../types/index.ts";
 import Header from "../islands/Header.tsx";
+import WelcomePortfolio from "./WelcomePortfolio.tsx";
 
 export interface Props {
   mobileBackground: LiveImage;
@@ -12,6 +13,7 @@ export interface Props {
   mainTitle: string;
   subTitle: string;
   counters: WelcomeCounter[];
+  portfolio: TWelcomePortfolio;
 }
 
 export default function Welcome(
@@ -24,6 +26,7 @@ export default function Welcome(
     mainTitle,
     subTitle,
     counters,
+    portfolio,
   }: Props,
 ) {
   const [numbers, setNumbers] = useState<number[]>([]);
@@ -131,6 +134,8 @@ export default function Welcome(
           </div>
         </div>
       </div>
+
+      <WelcomePortfolio title={portfolio?.title} slides={portfolio?.slides} />
     </div>
   );
 }

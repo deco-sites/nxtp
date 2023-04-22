@@ -62,6 +62,7 @@ export default function HeadComponent({
             font-weight: 300;
             font-display: swap;
             src: url(/fonts/IBMPlexSans-Light.ttf) format('truetype');
+            unicode-range: U+000-5FF; /* Latin glyphs */
           }
           @font-face {
             font-family: 'IBM Plex Sans';
@@ -69,6 +70,7 @@ export default function HeadComponent({
             font-weight: 500;
             font-display: swap;
             src: url(/fonts/IBMPlexSans-Medium.ttf) format('truetype');
+            unicode-range: U+000-5FF; /* Latin glyphs */
           }
           @font-face {
             font-family: 'IBM Plex Sans';
@@ -76,6 +78,7 @@ export default function HeadComponent({
             font-weight: 700;
             font-display: swap;
             src: url(/fonts/IBMPlexSans-Bold.ttf) format('truetype');
+            unicode-range: U+000-5FF; /* Latin glyphs */
           }
           @font-face {
             font-family: 'DIN-Next-LT-Pro';
@@ -83,10 +86,15 @@ export default function HeadComponent({
             font-weight: 400;
             font-display: swap;
             src: url(/fonts/DIN-Next-LT-Pro-Regular.ttf) format('truetype');
+            unicode-range: U+000-5FF; /* Latin glyphs */
           }
 
           html {
             font-size: 8px;
+          }
+
+          body {
+            -webkit-text-size-adjust: 100%;
           }
         
           @media screen and (min-width: 320px) {

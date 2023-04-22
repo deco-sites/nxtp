@@ -7,6 +7,7 @@ const options: Omit<Options, "selfURL"> = {
         sm: "576px",
         md: "768px",
         lg: "1024px",
+        sxl: "1200px",
         xl: "1230px",
         "2xl": "1430px",
         "3xl": "1600px",
@@ -42,6 +43,7 @@ const options: Omit<Options, "selfURL"> = {
         "mobile-title": ["2.8rem", "122.6%"],
         "mobile-sub-title": ["1.8rem", "122.6%"],
         "footertablet": ["1.5rem", "1.2"],
+        "portfolio-desk": "calc(1.325rem + .9vw)",
       },
       fontWeight: {
         "main-title": "700",
@@ -94,11 +96,15 @@ const options: Omit<Options, "selfURL"> = {
       margin: "0",
     },
     "writing-vertical-rl": {
-      "ms-writing-mode": "tb-rl",
+      "-ms-writing-mode": "tb-rl",
       "writing-mode": "vertical-rl",
     },
+    "writing-tb-rl": {
+      "-ms-writing-mode": "tb-rl",
+      "writing-mode": "tb-rl",
+    },
     "writing-mode-none": {
-      "ms-writing-mode": "unset",
+      "-ms-writing-mode": "unset",
       "writing-mode": "unset",
     },
     "toggler-icon": {
@@ -152,6 +158,12 @@ const options: Omit<Options, "selfURL"> = {
     },
     "border-socials": {
       "border-bottom": "1.22989px solid #9e9e9e",
+    },
+    "portfolio-transition": {
+      transition: "transform .6s ease-in-out",
+    },
+    "transition-btn": {
+      transition: "all .15s ease-in-out",
     },
   },
 };

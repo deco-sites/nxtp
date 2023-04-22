@@ -13,11 +13,30 @@ export default {
         primary: "#2FD180",
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
+        "footer": "#323940",
+        "hoverlogo": "#30c0dc",
         transparent: "transparent",
       },
+      textColor: {
+        "default": "#FFFFFF",
+        "default-inverse": "#000000",
+        "footer-hover": "#ccc",
+      },
+      borderColor: {
+        "footer": "#A6A6A6",
+      },
       fontFamily: {
-        sans: ["Albert Sans", "sans-serif"],
+        sans: ["IBM Plex Sans", "sans-serif"],
+        ltpro: ["DIN-Next-LT-Pro", "sans-serif"],
         serif: ["serif"],
+      },
+      fontSize: {
+        "footer": ["18px", "1.5"],
+        "footertablet": ["1.5rem", "1.2"],
+      },
+      fontWeight: {
+        "heading-1": "500",
+        "heading-2": "300",
       },
     },
   },

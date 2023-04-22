@@ -27,6 +27,28 @@ export default function Header(props: Props) {
         className={checkDisplayMenu(
           "opacity-0 pointer-events-none",
         )}
+        onMouseEnter={(
+          e,
+        ) => {
+          const el: HTMLElement | null = (e.target as HTMLAnchorElement)
+            .querySelector(
+              "svg path:nth-child(2)",
+            );
+
+          if (el) {
+            el.style.fill = "#30c0dc";
+          }
+        }}
+        onMouseLeave={(e) => {
+          const el: HTMLElement | null = (e.target as HTMLAnchorElement)
+            .querySelector(
+              "svg path:nth-child(2)",
+            );
+
+          if (el) {
+            el.style.fill = "#ffffff";
+          }
+        }}
         href="/"
         dangerouslySetInnerHTML={{ __html: props.logoSvg }}
       />

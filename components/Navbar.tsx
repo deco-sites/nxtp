@@ -25,7 +25,7 @@ export default function Navbar({ logoSvg, items, socials }: Props) {
     <>
       <div
         class={checkDisplayMenu(
-          "bg-mobile-menu-bg overflow-scroll fixed top-0 z-50 w-full h-full visible transition-all duration-500 right-0 backdrop-blur",
+          "bg-mobile-menu-bg overflow-y-auto fixed top-0 z-50 w-full h-full visible transition-all duration-500 right-0 backdrop-blur",
           "fixed -right-full w-full h-full top-0 transition-all duration-500 pointer-events-none",
         )}
       >

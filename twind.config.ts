@@ -15,6 +15,7 @@ const options: Omit<Options, "selfURL"> = {
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
         "footer": "#323940",
+        "hover": "#30c0dc",
         "hoverlogo": "#30c0dc",
         transparent: "transparent",
         "mobile-menu-bg": "rgba(50,57,63,.7)",
@@ -42,6 +43,10 @@ const options: Omit<Options, "selfURL"> = {
         "main-title": "700",
         "heading-1": "500",
         "heading-2": "300",
+      },
+      backgroundSize: {
+        "welcome": "100vw 260vh",
+        "welcome-sm": "100vw 130vh",
       },
     },
   },

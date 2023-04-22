@@ -39,6 +39,87 @@
       ],
       "title": "deco-sites/nxtp\\functions\\LoadGitHubRaw.ts@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@NavItem": {
+      "type": "object",
+      "properties": {
+        "link": {
+          "type": "string",
+          "title": "Link"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "showInDesktop": {
+          "type": "boolean",
+          "title": "Show In Desktop"
+        }
+      },
+      "required": [
+        "link",
+        "text",
+        "showInDesktop"
+      ],
+      "title": "NavItem"
+    },
+    "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@NavItem[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@NavItem"
+      },
+      "title": "NavItem[]"
+    },
+    "ZGVjby1zaXRlcy9ueHRwXGNvbXBvbmVudHNcV2VsY29tZS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "mobileBackground": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile Background"
+        },
+        "desktopBackground": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop Background"
+        },
+        "logoSvg": {
+          "type": "string",
+          "title": "Logo Svg"
+        },
+        "navItems": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@NavItem[]",
+          "title": "Nav Items"
+        },
+        "navSocials": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@NavItem"
+          },
+          "title": "Nav Socials"
+        },
+        "mainTitle": {
+          "type": "string",
+          "title": "Main Title"
+        },
+        "subTitle": {
+          "type": "string",
+          "title": "Sub Title"
+        }
+      },
+      "required": [
+        "mobileBackground",
+        "desktopBackground",
+        "logoSvg",
+        "navItems",
+        "navSocials",
+        "mainTitle",
+        "subTitle"
+      ],
+      "title": "deco-sites/nxtp\\components\\Welcome.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
       "$ref": "#/root/flags",
       "title": "Flag"
@@ -152,11 +233,6 @@
         "sections"
       ],
       "title": "deco-cx/live/pages/LivePage.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
-      "type": "string",
-      "format": "image-uri",
-      "title": "Image"
     },
     "ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXEZvb3Rlci50c3g=@Props": {
       "type": "object",
@@ -285,37 +361,7 @@
       ],
       "title": "deco-sites/nxtp\\sections\\Head.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@NavItem": {
-      "type": "object",
-      "properties": {
-        "link": {
-          "type": "string",
-          "title": "Link"
-        },
-        "text": {
-          "type": "string",
-          "title": "Text"
-        },
-        "showInDesktop": {
-          "type": "boolean",
-          "title": "Show In Desktop"
-        }
-      },
-      "required": [
-        "link",
-        "text",
-        "showInDesktop"
-      ],
-      "title": "NavItem"
-    },
-    "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@NavItem[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@NavItem"
-      },
-      "title": "NavItem[]"
-    },
-    "ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXFdlbGNvbWUudHN4@Props": {
+    "ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXFByZXNlbnRhdGlvbi50c3g=@Props": {
       "type": "object",
       "properties": {
         "mobileBackground": {
@@ -359,7 +405,7 @@
         "mainTitle",
         "subTitle"
       ],
-      "title": "deco-sites/nxtp\\sections\\Welcome.tsx@Props"
+      "title": "deco-sites/nxtp\\sections\\Presentation.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props": {
       "type": "object",
@@ -623,6 +669,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1dlbGNvbWUudHN4": {
+      "title": "./islands/Welcome.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXGNvbXBvbmVudHNcV2VsY29tZS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Welcome.tsx"
+          ],
+          "default": "./islands/Welcome.tsx"
+        }
+      }
+    },
     "JGxpdmUvaGFuZGxlcnMvcm91dGVzU2VsZWN0aW9uLnRz": {
       "title": "$live/handlers/routesSelection.ts",
       "type": "object",
@@ -791,12 +858,12 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL1dlbGNvbWUudHN4": {
-      "title": "deco-sites/nxtp/sections/Welcome.tsx",
+    "ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL1ByZXNlbnRhdGlvbi50c3g=": {
+      "title": "deco-sites/nxtp/sections/Presentation.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXFdlbGNvbWUudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXFByZXNlbnRhdGlvbi50c3g=@Props"
         }
       ],
       "required": [
@@ -806,9 +873,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/nxtp/sections/Welcome.tsx"
+            "deco-sites/nxtp/sections/Presentation.tsx"
           ],
-          "default": "deco-sites/nxtp/sections/Welcome.tsx"
+          "default": "deco-sites/nxtp/sections/Presentation.tsx"
         }
       }
     },
@@ -1073,6 +1140,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL05hdmJhci50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1dlbGNvbWUudHN4"
         }
       ]
     },
@@ -1123,7 +1193,7 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL0hlYWQudHN4"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL1dlbGNvbWUudHN4"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL1ByZXNlbnRhdGlvbi50c3g="
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4"

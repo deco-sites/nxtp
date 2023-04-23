@@ -12,22 +12,12 @@ interface Props {
 function ButtonPrev() {
   return (
     <button
-      class="block sm:hidden cursor-pointer h-12 w-12 outline-none focus:outline-none"
+      class="block h-auto sm:hidden cursor-pointer outline-none focus:outline-none"
       data-slide="prev"
       aria-label="Previous item"
     >
-      <svg
-        data-name="Capa 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 74.35 74.35"
-        class="w-[4em]"
-      >
-        <path
-          stroke-width="2"
-          style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#FFF;opacity:0.7"
-          d="m41.24 46.08-8.13-8.14 8.13-8.14"
-        >
-        </path>
+      <svg class="w-[4em]">
+        <use href={"/sprites.svg#button-prev"} />
       </svg>
     </button>
   );
@@ -36,22 +26,12 @@ function ButtonPrev() {
 function ButtonNext() {
   return (
     <button
-      class="block sm:hidden cursor-pointer h-12 w-12 outline-none focus:outline-none"
+      class="block h-auto sm:hidden cursor-pointer outline-none focus:outline-none"
       data-slide="next"
       aria-label="Next item"
     >
-      <svg
-        data-name="Capa 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 74.35 74.35"
-        class="w-[4em]"
-      >
-        <path
-          stroke-width="2"
-          style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#FFF;opacity:0.7"
-          d="m33.11 28.27 8.13 8.14-8.13 8.14"
-        >
-        </path>
+      <svg class="w-[4em]">
+        <use href={"/sprites.svg#button-next"} />
       </svg>
     </button>
   );

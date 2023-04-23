@@ -1,0 +1,21 @@
+<svg>
+    <symbol id="button-next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.35 74.35">
+        <path
+          stroke-width="2"
+          style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#FFF;opacity:0.7"
+          d="m33.11 28.27 8.13 8.14-8.13 8.14"
+        >
+        </path>
+    </symbol>
+    <symbol id="button-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.35 74.35">
+        <path
+          stroke-width="2"
+          style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#FFF;opacity:0.7"
+          d="m41.24 46.08-8.13-8.14 8.13-8.14"
+        >
+        </path>
+    </symbol>
+    <symbol id="arrow-right" viewBox="0 0 33 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.5109 1.83398L31.2399 11.572L21.5109 21.31" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"></path><path d="M31.24 11.572H1" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"></path>
+    </symbol>
+</svg>

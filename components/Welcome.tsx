@@ -83,8 +83,8 @@ export default function Welcome(
   return (
     <div
       style={checkBackgroundMedia(
-        `background-image: url('${mobileBackground.trim()}');`,
-        `background-image: url('${desktopBackground.trim()}');`,
+        `background-image: url('${mobileBackground}');`,
+        `background-image: url('${desktopBackground}');`,
       )}
       class={checkBackgroundMedia(
         `bg-welcome flex flex-col w-full h-full text-white`,

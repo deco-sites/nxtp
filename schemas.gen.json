@@ -104,6 +104,10 @@
       },
       "title": "WelcomeCounter[]"
     },
+    "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@LiveImage": {
+      "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+      "title": "LiveImage"
+    },
     "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomePortfolioSlide": {
       "type": "object",
       "properties": {
@@ -116,7 +120,7 @@
           "title": "Text"
         },
         "image": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@LiveImage",
           "title": "Image"
         }
       },

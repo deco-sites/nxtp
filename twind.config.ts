@@ -21,6 +21,8 @@ const options: Omit<Options, "selfURL"> = {
         "hoverlogo": "#30c0dc",
         transparent: "transparent",
         "mobile-menu-bg": "rgba(50,57,63,.7)",
+        "dots": "hsla(0,0%,100%,.5)",
+        "dots-active": "#30c0dc",
       },
       backgroundImage: {
         "gradient-line": "linear-gradient(#9cf9ff 100%, #fff 0)",

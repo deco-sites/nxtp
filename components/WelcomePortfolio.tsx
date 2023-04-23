@@ -1,6 +1,6 @@
 // import Image from "deco-sites/std/components/Image.tsx";
 import { useId } from "preact/hooks";
-import { Slider } from "./Slider.tsx";
+import { Slider, SliderDots } from "./Slider.tsx";
 import SliderControllerJS from "./SliderJS.tsx";
 import { WelcomePortfolioSlide } from "../types/index.ts";
 
@@ -12,11 +12,12 @@ interface Props {
 function ButtonPrev() {
   return (
     <button
-      class="block h-auto sm:hidden cursor-pointer outline-none focus:outline-none"
+      type="button"
+      class="block h-auto cursor-pointer outline-none focus:outline-none"
       data-slide="prev"
       aria-label="Previous item"
     >
-      <svg class="w-[4em]">
+      <svg class="w-[4em] sm:w-[10em]">
         <use href={"/sprites.svg#button-prev"} />
       </svg>
     </button>
@@ -26,11 +27,12 @@ function ButtonPrev() {
 function ButtonNext() {
   return (
     <button
-      class="block h-auto sm:hidden cursor-pointer outline-none focus:outline-none"
+      type="button"
+      class="block h-auto cursor-pointer outline-none focus:outline-none"
       data-slide="next"
       aria-label="Next item"
     >
-      <svg class="w-[4em]">
+      <svg class="w-[4em] sm:w-[10em]">
         <use href={"/sprites.svg#button-next"} />
       </svg>
     </button>
@@ -49,11 +51,21 @@ export default function WelcomePortfolio({ slides, title }: Props) {
       id={id}
       class="relative w-full h-full flex flex-col sm:flex-row justify-center border-t-1 border-solid border-[#ffffff38] sm:flex-wrap sm:h-screen"
     >
-      <div class="text-center sm:px-[0.75rem] sm:flex sm:flex-col sm:w-[16.66666667%]">
-        <hr class="hidden sm:block h-[2px] w-[42.266%] my-[3rem] ml-[20%] bg-white opacity-100" />
-        <h2 class="font-sans font-bold text-[1.5rem] leading-[17px] tracking-[.2em] sm:tracking-normal uppercase w-full my-[60px] sm:writing-tb-rl sm:rotate-[-180deg] sm:text-portfolio-desk sxl:text-[2rem] sm:leading-[1.2] sm:font-heading-1 sm:lowercase sm:first-letter::uppercase sm:w-auto sm:m-0 sm:ml-[45%]">
-          {title && title}
-        </h2>
+      <div class="text-center sm:px-[0.75rem] sm:flex sm:flex-col sm:w-[16.66666667%] sm:justify-between">
+        <div>
+          <hr class="hidden sm:block h-[2px] w-[42.266%] my-[3rem] ml-[20%] bg-white opacity-100" />
+          <h2 class="font-sans font-bold text-[1.5rem] leading-[17px] tracking-[.2em] sm:tracking-normal uppercase w-full my-[60px] sm:writing-tb-rl sm:rotate-[-180deg] sm:text-portfolio-desk sxl:text-[2rem] sm:leading-[1.2] sm:font-heading-1 sm:lowercase sm:first-letter::uppercase sm:w-auto sm:m-0 sm:ml-[45%]">
+            {title && title}
+          </h2>
+        </div>
+
+        <div class="hidden sm:flex justify-center self-end ml-[15%] w-full pl-[0.75rem] mb-12">
+          <SliderDots>
+            {slides?.map((_) => (
+              <div class="w-[8px] h-[8px] rounded-1/2 bg-dots group-disabled:bg-dots-active mx-[5px]"></div>
+            ))}
+          </SliderDots>
+        </div>
       </div>
       <div class="sm:w-[83.33333333%] sm:h-full sm:relative">
         <Slider
@@ -64,9 +76,13 @@ export default function WelcomePortfolio({ slides, title }: Props) {
             <div class="w-full h-full flex flex-col sm:flex-row sm:relative">
               <div class="sm:flex sm:flex-col sm:w-[41%] sm:border-r sm:border-solid sm:border-[#ffffff38]">
                 <div class="w-full h-[20vh] text-center flex justify-evenly items-center sm:border-b sm:border-solid sm:border-[#ffffff38]">
-                  <ButtonPrev />
+                  <span class="block sm:hidden">
+                    <ButtonPrev />
+                  </span>
                   <span dangerouslySetInnerHTML={{ __html: slide.logoSvg }} />
-                  <ButtonNext />
+                  <span class="block sm:hidden">
+                    <ButtonNext />
+                  </span>
                 </div>
                 <div class="flex h-[75%] justify-start sm:justify-evenly flex-col items-center my-auto mx-[10%]">
                   <p class="font-ltpro font-normal mb-[1rem] text-[1.5rem] leading-[2em]">
@@ -92,6 +108,11 @@ export default function WelcomePortfolio({ slides, title }: Props) {
             </div>
           ))}
         </Slider>
+      </div>
+
+      <div class="hidden sm:flex absolute w-full justify-between z-50 top-[37%] px-[3vw]">
+        <ButtonPrev />
+        <ButtonNext />
       </div>
 
       <SliderControllerJS interval={4000} rootId={id} />

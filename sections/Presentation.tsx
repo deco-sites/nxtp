@@ -1,5 +1,6 @@
+import { Head } from "$fresh/runtime.ts";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import { NavItem, WelcomeCounter, TWelcomePortfolio } from "../types/index.ts";
+import { NavItem, TWelcomePortfolio, WelcomeCounter } from "../types/index.ts";
 import Welcome from "../islands/Welcome.tsx";
 
 export interface Props {
@@ -34,5 +35,25 @@ export interface Props {
 export default function Presentation(
   props: Props,
 ) {
-  return <Welcome {...props} />;
+  return (
+    <>
+      <Head>
+        <link
+          rel="preload"
+          href={props.mobileBackground}
+          as="image"
+          media="(max-width: 575px)"
+        />
+        <link
+          rel="preload"
+          href={props.desktopBackground}
+          as="image"
+          media="(min-width: 576px)"
+        />
+      </Head>
+      <Welcome
+        {...props}
+      />
+    </>
+  );
 }

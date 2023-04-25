@@ -23,6 +23,13 @@ const options: Omit<Options, "selfURL"> = {
         "mobile-menu-bg": "rgba(50,57,63,.7)",
         "dots": "hsla(0,0%,100%,.5)",
         "dots-active": "#30c0dc",
+        "news": "#eee",
+        "highlight": "#30c0dc",
+        "news-description": "#b9b9b9",
+        "news-description-active": "#32393f",
+      },
+      boxShadow: {
+        news: "0 2px 4px rgba(0,0,0,.15)",
       },
       backgroundImage: {
         "gradient-line": "linear-gradient(#9cf9ff 100%, #fff 0)",
@@ -55,6 +62,9 @@ const options: Omit<Options, "selfURL"> = {
       backgroundSize: {
         "welcome": "100vw 260vh",
         "welcome-sm": "100vw 130vh",
+      },
+      borderRadius: {
+        "news-highlight": "0 8px 8px 0",
       },
     },
   },

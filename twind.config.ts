@@ -14,6 +14,7 @@ const options: Omit<Options, "selfURL"> = {
       },
       colors: {
         primary: "#2FD180",
+        secondary: "rgba(50,57,63,1)",
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
         "footer": "#323940",
@@ -176,6 +177,11 @@ const options: Omit<Options, "selfURL"> = {
     },
     "transition-btn": {
       transition: "all .15s ease-in-out",
+    },
+    "text-box": {
+      "-webkit-box-orient": "vertical",
+      "-webkit-line-clamp": "2",
+      "display": "-webkit-box",
     },
   },
 };

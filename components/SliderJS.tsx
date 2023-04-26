@@ -133,8 +133,10 @@ const setup = ({ rootId, behavior, interval }: Props) => {
         const dot = dots?.item(index);
 
         if (item.isIntersecting) {
+          item.target.setAttribute("data-intersecting", "true");
           dot?.setAttribute("disabled", "");
         } else {
+          item.target.setAttribute("data-intersecting", "false");
           dot?.removeAttribute("disabled");
         }
       }),

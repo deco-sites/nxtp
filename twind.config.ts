@@ -14,6 +14,7 @@ const options: Omit<Options, "selfURL"> = {
       },
       colors: {
         primary: "#2FD180",
+        secondary: "rgba(50,57,63,1)",
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
         "footer": "#323940",
@@ -23,6 +24,13 @@ const options: Omit<Options, "selfURL"> = {
         "mobile-menu-bg": "rgba(50,57,63,.7)",
         "dots": "hsla(0,0%,100%,.5)",
         "dots-active": "#30c0dc",
+        "news": "#eee",
+        "highlight": "#30c0dc",
+        "news-description": "#b9b9b9",
+        "news-description-active": "#32393f",
+      },
+      boxShadow: {
+        news: "0 2px 4px rgba(0,0,0,.15)",
       },
       backgroundImage: {
         "gradient-line": "linear-gradient(#9cf9ff 100%, #fff 0)",
@@ -55,6 +63,9 @@ const options: Omit<Options, "selfURL"> = {
       backgroundSize: {
         "welcome": "100vw 260vh",
         "welcome-sm": "100vw 130vh",
+      },
+      borderRadius: {
+        "news-highlight": "0 8px 8px 0",
       },
     },
   },
@@ -166,6 +177,11 @@ const options: Omit<Options, "selfURL"> = {
     },
     "transition-btn": {
       transition: "all .15s ease-in-out",
+    },
+    "text-box": {
+      "-webkit-box-orient": "vertical",
+      "-webkit-line-clamp": "2",
+      "display": "-webkit-box",
     },
   },
 };

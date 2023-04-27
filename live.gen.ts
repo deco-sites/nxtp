@@ -11,11 +11,12 @@ import * as $$$$$1 from "./islands/MenuButton.tsx";
 import * as $$$$$2 from "./islands/Navbar.tsx";
 import * as $$$$$3 from "./islands/SliderJS.tsx";
 import * as $$$$$4 from "./islands/Welcome.tsx";
-import * as $$$$$$$$0 from "./sections/Footer.tsx";
-import * as $$$$$$$$1 from "./sections/GetStarted.tsx";
-import * as $$$$$$$$2 from "./sections/Head.tsx";
-import * as $$$$$$$$3 from "./sections/News.tsx";
-import * as $$$$$$$$4 from "./sections/Presentation.tsx";
+import * as $$$$$$$$0 from "./sections/FAQ.tsx";
+import * as $$$$$$$$1 from "./sections/Footer.tsx";
+import * as $$$$$$$$2 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$3 from "./sections/Head.tsx";
+import * as $$$$$$$$4 from "./sections/News.tsx";
+import * as $$$$$$$$5 from "./sections/Presentation.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -63,11 +64,12 @@ const manifest = {
     "./islands/Welcome.tsx": $$$$$4,
   },
   "sections": {
-    "deco-sites/nxtp/sections/Footer.tsx": $$$$$$$$0,
-    "deco-sites/nxtp/sections/GetStarted.tsx": $$$$$$$$1,
-    "deco-sites/nxtp/sections/Head.tsx": $$$$$$$$2,
-    "deco-sites/nxtp/sections/News.tsx": $$$$$$$$3,
-    "deco-sites/nxtp/sections/Presentation.tsx": $$$$$$$$4,
+    "deco-sites/nxtp/sections/FAQ.tsx": $$$$$$$$0,
+    "deco-sites/nxtp/sections/Footer.tsx": $$$$$$$$1,
+    "deco-sites/nxtp/sections/GetStarted.tsx": $$$$$$$$2,
+    "deco-sites/nxtp/sections/Head.tsx": $$$$$$$$3,
+    "deco-sites/nxtp/sections/News.tsx": $$$$$$$$4,
+    "deco-sites/nxtp/sections/Presentation.tsx": $$$$$$$$5,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {

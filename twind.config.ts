@@ -42,6 +42,7 @@ const options: Omit<Options, "selfURL"> = {
       },
       borderColor: {
         "footer": "#A6A6A6",
+        "accordions": "rgba(0,0,0,.125)",
       },
       fontFamily: {
         sans: ["IBM Plex Sans", "sans-serif"],

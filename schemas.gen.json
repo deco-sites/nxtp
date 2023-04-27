@@ -104,10 +104,6 @@
       },
       "title": "WelcomeCounter[]"
     },
-    "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@LiveImage": {
-      "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-      "title": "LiveImage"
-    },
     "ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@WelcomePortfolioSlide": {
       "type": "object",
       "properties": {
@@ -120,7 +116,7 @@
           "title": "Text"
         },
         "image": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHR5cGVzXGluZGV4LnRz@LiveImage",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Image"
         }
       },
@@ -453,6 +449,46 @@
       ],
       "title": "deco-sites/nxtp\\sections\\Head.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXE5ld3MudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "news": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "description": {
+                "type": "string",
+                "title": "Description"
+              },
+              "link": {
+                "type": "string",
+                "title": "Link"
+              }
+            },
+            "required": [
+              "title",
+              "description",
+              "link"
+            ]
+          },
+          "title": "News"
+        }
+      },
+      "required": [
+        "title",
+        "news"
+      ],
+      "title": "deco-sites/nxtp\\sections\\News.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXFBvcnRmb2xpby50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -484,9 +520,9 @@
         "viewcontent": {
           "type": "object",
           "properties": {
-            "src": {
+            "content": {
               "type": "string",
-              "title": "Src"
+              "title": "Content"
             },
             "link": {
               "type": "string",
@@ -494,7 +530,7 @@
             }
           },
           "required": [
-            "src",
+            "content",
             "link"
           ],
           "title": "Viewcontent"
@@ -825,6 +861,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1NsaWRlckpTLnRzeA==": {
+      "title": "./islands/SliderJS.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/SliderJS.tsx"
+          ],
+          "default": "./islands/SliderJS.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1dlbGNvbWUudHN4": {
       "title": "./islands/Welcome.tsx",
       "type": "object",
@@ -1011,6 +1063,27 @@
             "deco-sites/nxtp/sections/Head.tsx"
           ],
           "default": "deco-sites/nxtp/sections/Head.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL05ld3MudHN4": {
+      "title": "deco-sites/nxtp/sections/News.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXE5ld3MudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/nxtp/sections/News.tsx"
+          ],
+          "default": "deco-sites/nxtp/sections/News.tsx"
         }
       }
     },
@@ -1319,6 +1392,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL05hdmJhci50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpTLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL1dlbGNvbWUudHN4"
         }
       ]
@@ -1368,6 +1444,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL0hlYWQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL05ld3MudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL1BvcnRmb2xpby50c3g="

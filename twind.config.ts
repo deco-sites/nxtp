@@ -86,6 +86,20 @@ const options: Omit<Options, "selfURL"> = {
       overflow: "hidden",
       height: "100vh",
     },
+    "details summary": {
+      transition: "margin 150ms ease-out",
+    },
+    "details[open] summary": {
+      "margin-bottom": "1rem",
+    },
+    "details summary svg": {
+      transition: "transform .2s ease-in-out",
+    },
+    "details[open] summary svg": {
+      transition: "transform .2s ease-in-out",
+      transform: "rotate(-180deg)",
+      fill: "#e6e6e6",
+    },
   }),
   plugins: {
     "welcome-container": {

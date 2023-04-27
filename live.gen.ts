@@ -6,11 +6,12 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/Header.tsx";
-import * as $$$$$1 from "./islands/MenuButton.tsx";
-import * as $$$$$2 from "./islands/Navbar.tsx";
-import * as $$$$$3 from "./islands/SliderJS.tsx";
-import * as $$$$$4 from "./islands/Welcome.tsx";
+import * as $$$$$0 from "./islands/Accordion.tsx";
+import * as $$$$$1 from "./islands/Header.tsx";
+import * as $$$$$2 from "./islands/MenuButton.tsx";
+import * as $$$$$3 from "./islands/Navbar.tsx";
+import * as $$$$$4 from "./islands/SliderJS.tsx";
+import * as $$$$$5 from "./islands/Welcome.tsx";
 import * as $$$$$$$$0 from "./sections/FAQ.tsx";
 import * as $$$$$$$$1 from "./sections/Footer.tsx";
 import * as $$$$$$$$2 from "./sections/GetStarted.tsx";
@@ -58,11 +59,12 @@ const manifest = {
     "./routes/[...catchall].tsx": $live_catchall,
   },
   "islands": {
-    "./islands/Header.tsx": $$$$$0,
-    "./islands/MenuButton.tsx": $$$$$1,
-    "./islands/Navbar.tsx": $$$$$2,
-    "./islands/SliderJS.tsx": $$$$$3,
-    "./islands/Welcome.tsx": $$$$$4,
+    "./islands/Accordion.tsx": $$$$$0,
+    "./islands/Header.tsx": $$$$$1,
+    "./islands/MenuButton.tsx": $$$$$2,
+    "./islands/Navbar.tsx": $$$$$3,
+    "./islands/SliderJS.tsx": $$$$$4,
+    "./islands/Welcome.tsx": $$$$$5,
   },
   "sections": {
     "deco-sites/nxtp/sections/FAQ.tsx": $$$$$$$$0,

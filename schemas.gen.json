@@ -853,6 +853,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0FjY29yZGlvbi50c3g=": {
+      "title": "./islands/Accordion.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Accordion.tsx"
+          ],
+          "default": "./islands/Accordion.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0hlYWRlci50c3g=": {
       "title": "./islands/Header.tsx",
       "type": "object",
@@ -1442,6 +1458,9 @@
       "anyOf": [
         {
           "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0FjY29yZGlvbi50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="

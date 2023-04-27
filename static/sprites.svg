@@ -26,4 +26,8 @@
     <symbol id="portfolio-slider-button" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
     <path d="M23.13 45.33c12.2 0 22.09-9.89 22.09-22.09S35.33 1.15 23.13 1.15 1.04 11.04 1.04 23.24s9.89 22.09 22.09 22.09Z" stroke="#000" stroke-miterlimit="10"></path><path d="M22.86 27.76v-4.25h-4.25v-.52h4.25v-4.26h.54v4.26h4.25v.54H23.4v4.25l-.54-.02Z" fill="#000"></path>
     </symbol>
+
+    <symbol id="arrow-accordion" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'>
+      <path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/>
+    </symbol>
 </svg>

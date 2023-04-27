@@ -322,6 +322,46 @@
       ],
       "title": "deco-cx/live/pages/LivePage.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
+      "type": "string",
+      "format": "html",
+      "title": "HTML"
+    },
+    "ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXEZBUS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "answer": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+                "title": "Answer"
+              }
+            },
+            "required": [
+              "title",
+              "answer"
+            ]
+          },
+          "title": "Questions"
+        }
+      },
+      "required": [
+        "title",
+        "questions"
+      ],
+      "title": "deco-sites/nxtp\\sections\\FAQ.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXEZvb3Rlci50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -813,6 +853,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0FjY29yZGlvbi50c3g=": {
+      "title": "./islands/Accordion.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Accordion.tsx"
+          ],
+          "default": "./islands/Accordion.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0hlYWRlci50c3g=": {
       "title": "./islands/Header.tsx",
       "type": "object",
@@ -1000,6 +1056,27 @@
             "$live/pages/LivePage.tsx"
           ],
           "default": "$live/pages/LivePage.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL0ZBUS50c3g=": {
+      "title": "deco-sites/nxtp/sections/FAQ.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXEZBUS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/nxtp/sections/FAQ.tsx"
+          ],
+          "default": "deco-sites/nxtp/sections/FAQ.tsx"
         }
       }
     },
@@ -1383,6 +1460,9 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0FjY29yZGlvbi50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="
         },
         {
@@ -1435,6 +1515,9 @@
       "anyOf": [
         {
           "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL0ZBUS50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL0Zvb3Rlci50c3g="

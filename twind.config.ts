@@ -40,6 +40,7 @@ const options: Omit<Options, "selfURL"> = {
       },
       borderColor: {
         "footer": "#A6A6A6",
+        "accordions": "rgba(0,0,0,.125)",
       },
       fontFamily: {
         sans: ["IBM Plex Sans", "sans-serif"],
@@ -84,6 +85,20 @@ const options: Omit<Options, "selfURL"> = {
     "body.no-scroll": {
       overflow: "hidden",
       height: "100vh",
+    },
+    "details summary": {
+      transition: "margin 150ms ease-out",
+    },
+    "details[open] summary": {
+      "margin-bottom": "1rem",
+    },
+    "details summary svg": {
+      transition: "transform .2s ease-in-out",
+    },
+    "details[open] summary svg": {
+      transition: "transform .2s ease-in-out",
+      transform: "rotate(-180deg)",
+      fill: "#e6e6e6",
     },
   }),
   plugins: {

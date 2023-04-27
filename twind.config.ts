@@ -23,6 +23,7 @@ const options: Omit<Options, "selfURL"> = {
         "mobile-menu-bg": "rgba(50,57,63,.7)",
         "dots": "hsla(0,0%,100%,.5)",
         "dots-active": "#30c0dc",
+        "portfoliosection": "#eee",
       },
       backgroundImage: {
         "gradient-line": "linear-gradient(#9cf9ff 100%, #fff 0)",
@@ -46,6 +47,8 @@ const options: Omit<Options, "selfURL"> = {
         "mobile-sub-title": ["1.8rem", "122.6%"],
         "footertablet": ["1.5rem", "1.2"],
         "portfolio-desk": "calc(1.325rem + .9vw)",
+        "portfoliosection": ["2rem", "1.2"],
+        "portfoliosection-mobile": ["1.5rem", "17px"],
       },
       fontWeight: {
         "main-title": "700",
@@ -55,6 +58,9 @@ const options: Omit<Options, "selfURL"> = {
       backgroundSize: {
         "welcome": "100vw 260vh",
         "welcome-sm": "100vw 130vh",
+      },
+      boxShadow: {
+        "portfoliosm": "0 2px 4px 0px rgba(0, 0, 0, .15)",
       },
     },
   },

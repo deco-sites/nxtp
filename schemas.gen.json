@@ -453,6 +453,60 @@
       ],
       "title": "deco-sites/nxtp\\sections\\Head.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXFBvcnRmb2xpby50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "portfolio": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "src": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Src"
+              },
+              "link": {
+                "type": "string",
+                "title": "Link"
+              }
+            },
+            "required": [
+              "src",
+              "link"
+            ]
+          },
+          "title": "Portfolio"
+        },
+        "viewcontent": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string",
+              "title": "Src"
+            },
+            "link": {
+              "type": "string",
+              "title": "Link"
+            }
+          },
+          "required": [
+            "src",
+            "link"
+          ],
+          "title": "Viewcontent"
+        }
+      },
+      "required": [
+        "title",
+        "portfolio",
+        "viewcontent"
+      ],
+      "title": "deco-sites/nxtp\\sections\\Portfolio.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXFByZXNlbnRhdGlvbi50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -960,6 +1014,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL1BvcnRmb2xpby50c3g=": {
+      "title": "deco-sites/nxtp/sections/Portfolio.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXHNlY3Rpb25zXFBvcnRmb2xpby50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/nxtp/sections/Portfolio.tsx"
+          ],
+          "default": "deco-sites/nxtp/sections/Portfolio.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL1ByZXNlbnRhdGlvbi50c3g=": {
       "title": "deco-sites/nxtp/sections/Presentation.tsx",
       "type": "object",
@@ -1293,6 +1368,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL0hlYWQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL1BvcnRmb2xpby50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwL3NlY3Rpb25zL1ByZXNlbnRhdGlvbi50c3g="

@@ -9,8 +9,10 @@ import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/Header.tsx";
 import * as $$$$$1 from "./islands/MenuButton.tsx";
 import * as $$$$$2 from "./islands/Navbar.tsx";
-import * as $$$$$3 from "./islands/SliderJS.tsx";
-import * as $$$$$4 from "./islands/Welcome.tsx";
+import * as $$$$$3 from "./islands/Newsletter.tsx";
+import * as $$$$$4 from "./islands/NewsletterButton.tsx";
+import * as $$$$$5 from "./islands/SliderJS.tsx";
+import * as $$$$$6 from "./islands/Welcome.tsx";
 import * as $$$$$$$$0 from "./sections/Footer.tsx";
 import * as $$$$$$$$1 from "./sections/GetStarted.tsx";
 import * as $$$$$$$$2 from "./sections/Head.tsx";
@@ -60,8 +62,10 @@ const manifest = {
     "./islands/Header.tsx": $$$$$0,
     "./islands/MenuButton.tsx": $$$$$1,
     "./islands/Navbar.tsx": $$$$$2,
-    "./islands/SliderJS.tsx": $$$$$3,
-    "./islands/Welcome.tsx": $$$$$4,
+    "./islands/Newsletter.tsx": $$$$$3,
+    "./islands/NewsletterButton.tsx": $$$$$4,
+    "./islands/SliderJS.tsx": $$$$$5,
+    "./islands/Welcome.tsx": $$$$$6,
   },
   "sections": {
     "deco-sites/nxtp/sections/Footer.tsx": $$$$$$$$0,

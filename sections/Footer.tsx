@@ -1,16 +1,21 @@
 import Image from "deco-sites/std/components/Image.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import NewsletterButton from "../islands/NewsletterButton.tsx";
+import Newsletter from "../islands/Newsletter.tsx";
+
 
 export interface Props {
     social: { text: string; link: string }[];
     logo: string;
     certifieds: { src: LiveImage; width: number; height: number }[];
     reservedRights: string;
+    newsletterLabel: string;
 }
 
 export default function Footer(
-    { social, logo, certifieds, reservedRights }: Props,
+    { social, logo, certifieds, reservedRights, newsletterLabel }: Props,
 ) {
+
     return (
         <div class="block bg-footer h-[500px] text-default">
             <div class="h-full p-[5rem] flex-col">
@@ -26,12 +31,12 @@ export default function Footer(
                         <button class="text-footer text-heading-1 mr-12 border border-solid border-white rounded-[30px] px-12 py-[0.375rem] cursor-pointer transition ease-in-out delay-50 hover:bg-white hover:text-default-inverse">
                             Contact Us
                         </button>
-                        <button class="text-footer text-heading-1 flex items-center border border-solid border-white rounded-[30px] pl-12 pr-6 py-1 h-[3.5rem] cursor-pointer transition ease-in-out delay-50 hover:bg-white hover:text-default-inverse">
-                            Sign up for newsletter{" "}
-                            <svg class="ml-12 h-[24px]" width={13} height={24}>
-                                <use href={"/sprites.svg#arrow-right"} />
-                            </svg>
-                        </button>
+
+                        <NewsletterButton />
+
+
+                        <Newsletter newsletterLabel={newsletterLabel} />
+
                     </div>
 
                     <div class="flex items-center">

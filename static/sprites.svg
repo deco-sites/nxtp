@@ -26,4 +26,8 @@
     <symbol id="portfolio-slider-button" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
     <path d="M23.13 45.33c12.2 0 22.09-9.89 22.09-22.09S35.33 1.15 23.13 1.15 1.04 11.04 1.04 23.24s9.89 22.09 22.09 22.09Z" stroke="#000" stroke-miterlimit="10"></path><path d="M22.86 27.76v-4.25h-4.25v-.52h4.25v-4.26h.54v4.26h4.25v.54H23.4v4.25l-.54-.02Z" fill="#000"></path>
     </symbol>
+
+    <symbol id="close-icon-modal" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="15.2028" y1="13.7886" x2="41.3657" y2="39.9515" stroke="black" stroke-width="2" stroke-linecap="round"></line><line x1="13.7886" y1="39.9515" x2="39.9515" y2="13.7886" stroke="black" stroke-width="2" stroke-linecap="round"></line>
+    </symbol>
 </svg>

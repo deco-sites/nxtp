@@ -39,6 +39,19 @@
       ],
       "title": "deco-sites/nxtp\\functions\\LoadGitHubRaw.ts@Props"
     },
+    "ZGVjby1zaXRlcy9ueHRwXGNvbXBvbmVudHNcTmV3c2xldHRlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "newsletterLabel": {
+          "type": "string",
+          "title": "Newsletter Label"
+        }
+      },
+      "required": [
+        "newsletterLabel"
+      ],
+      "title": "deco-sites/nxtp\\components\\Newsletter.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
       "type": "string",
       "format": "image-uri",
@@ -379,13 +392,18 @@
         "reservedRights": {
           "type": "string",
           "title": "Reserved Rights"
+        },
+        "newsletterLabel": {
+          "type": "string",
+          "title": "Newsletter Label"
         }
       },
       "required": [
         "social",
         "logo",
         "certifieds",
-        "reservedRights"
+        "reservedRights",
+        "newsletterLabel"
       ],
       "title": "deco-sites/nxtp\\sections\\Footer.tsx@Props"
     },
@@ -858,6 +876,43 @@
             "./islands/Navbar.tsx"
           ],
           "default": "./islands/Navbar.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL05ld3NsZXR0ZXIudHN4": {
+      "title": "./islands/Newsletter.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ueHRwXGNvbXBvbmVudHNcTmV3c2xldHRlci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Newsletter.tsx"
+          ],
+          "default": "./islands/Newsletter.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL05ld3NsZXR0ZXJCdXR0b24udHN4": {
+      "title": "./islands/NewsletterButton.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/NewsletterButton.tsx"
+          ],
+          "default": "./islands/NewsletterButton.tsx"
         }
       }
     },
@@ -1390,6 +1445,12 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL05hdmJhci50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL05ld3NsZXR0ZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL05ld3NsZXR0ZXJCdXR0b24udHN4"
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpTLnRzeA=="

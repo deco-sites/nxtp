@@ -29,6 +29,7 @@ const options: Omit<Options, "selfURL"> = {
         "highlight": "#30c0dc",
         "news-description": "#b9b9b9",
         "news-description-active": "#32393f",
+        "footer-modal": "hsla(0,0%,84%,.9)",
       },
       backgroundImage: {
         "gradient-line": "linear-gradient(#9cf9ff 100%, #fff 0)",
@@ -37,6 +38,7 @@ const options: Omit<Options, "selfURL"> = {
         "default": "#FFFFFF",
         "default-inverse": "#000000",
         "footer-hover": "#ccc",
+        "footer-modal-red": "#f44336",
       },
       borderColor: {
         "footer": "#A6A6A6",
@@ -48,6 +50,8 @@ const options: Omit<Options, "selfURL"> = {
       },
       fontSize: {
         "footer": ["18px", "1.5"],
+        "footer-modal": ["16px", "1.6"],
+        "footer-modal-mini": ["12px", "21px"],
         "mobile-title": ["2.8rem", "122.6%"],
         "mobile-sub-title": ["1.8rem", "122.6%"],
         "footertablet": ["1.5rem", "1.2"],
@@ -198,6 +202,43 @@ const options: Omit<Options, "selfURL"> = {
     "portfolio-filter-none": {
       "cursor": "pointer",
       "filter": "none",
+    },
+    "footer-arrow": {
+      "filter": "invert(1)",
+    },
+    "modal-newsletter": {
+      "position": "fixed",
+      "inset": "0px",
+      "display": "flex",
+      "z-index": 999,
+      "pointer-events": "auto",
+      "background": "hsla(0,0%,100%,.5)",
+    },
+    "modal-newsletter-input": {
+      "font": "inherit",
+      "color": "currentColor",
+      "width": "100%",
+      "border": "0",
+      "height": "1.1876em",
+      "margin": "0",
+      "display": "block",
+      "padding": "6px 0 7px",
+      "min-width": "0",
+      "background": "none",
+      "box-sizing": "content-box",
+      "animation-name": "mui-auto-fill-cancel",
+      "letter-spacing": "inherit",
+      "animation-duration": "10ms",
+      "-webkit-tap-highlight-color": "transparent",
+    },
+    "modal-input": {
+      "border": "1px solid #f44336",
+      "left": "0",
+      "right": "0",
+      "bottom": "0",
+      "position": "absolute",
+      "transform": "scaleX(1)",
+      "transition": "transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms",
     },
   },
 };

@@ -24,13 +24,11 @@ const options: Omit<Options, "selfURL"> = {
         "mobile-menu-bg": "rgba(50,57,63,.7)",
         "dots": "hsla(0,0%,100%,.5)",
         "dots-active": "#30c0dc",
+        "portfoliosection": "#eee",
         "news": "#eee",
         "highlight": "#30c0dc",
         "news-description": "#b9b9b9",
         "news-description-active": "#32393f",
-      },
-      boxShadow: {
-        news: "0 2px 4px rgba(0,0,0,.15)",
       },
       backgroundImage: {
         "gradient-line": "linear-gradient(#9cf9ff 100%, #fff 0)",
@@ -55,6 +53,8 @@ const options: Omit<Options, "selfURL"> = {
         "mobile-sub-title": ["1.8rem", "122.6%"],
         "footertablet": ["1.5rem", "1.2"],
         "portfolio-desk": "calc(1.325rem + .9vw)",
+        "portfoliosection": ["2rem", "1.2"],
+        "portfoliosection-mobile": ["1.5rem", "17px"],
       },
       fontWeight: {
         "main-title": "700",
@@ -64,6 +64,10 @@ const options: Omit<Options, "selfURL"> = {
       backgroundSize: {
         "welcome": "100vw 260vh",
         "welcome-sm": "100vw 130vh",
+      },
+      boxShadow: {
+        "portfoliosm": "0 2px 4px 0px rgba(0, 0, 0, .15)",
+        "news": "0 2px 4px rgba(0,0,0,.15)",
       },
       borderRadius: {
         "news-highlight": "0 8px 8px 0",
@@ -183,6 +187,18 @@ const options: Omit<Options, "selfURL"> = {
       "-webkit-box-orient": "vertical",
       "-webkit-line-clamp": "2",
       "display": "-webkit-box",
+    },
+    "underline-offset": {
+      "text-underline-position": "under",
+      "text-underline-offset": "3px",
+    },
+    "portfolio-filter": {
+      "cursor": "pointer",
+      "filter": "grayscale(1)",
+    },
+    "portfolio-filter-none": {
+      "cursor": "pointer",
+      "filter": "none",
     },
   },
 };

@@ -11,7 +11,7 @@ import * as $$$$$1 from "./islands/Header.tsx";
 import * as $$$$$2 from "./islands/MenuButton.tsx";
 import * as $$$$$3 from "./islands/Navbar.tsx";
 import * as $$$$$4 from "./islands/SliderJS.tsx";
-import * as $$$$$5 from "./islands/Welcome.tsx";
+import * as $$$$$5 from "./islands/WelcomeNumbers.tsx";
 import * as $$$$$$$$0 from "./sections/FAQ.tsx";
 import * as $$$$$$$$1 from "./sections/Footer.tsx";
 import * as $$$$$$$$2 from "./sections/GetStarted.tsx";
@@ -64,7 +64,7 @@ const manifest = {
     "./islands/MenuButton.tsx": $$$$$2,
     "./islands/Navbar.tsx": $$$$$3,
     "./islands/SliderJS.tsx": $$$$$4,
-    "./islands/Welcome.tsx": $$$$$5,
+    "./islands/WelcomeNumbers.tsx": $$$$$5,
   },
   "sections": {
     "deco-sites/nxtp/sections/FAQ.tsx": $$$$$$$$0,

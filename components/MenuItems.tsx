@@ -3,21 +3,22 @@ import { NavItem } from "../types/index.ts";
 interface Props {
   items: NavItem[];
   socials: NavItem[];
+  active: number;
 }
 
-export default function MenuItems({ items, socials }: Props) {
-  const checkActiveItem = (link: string) => {
-    return window.location.pathname === link;
+export default function MenuItems({ items, socials, active }: Props) {
+  const checkActiveItem = (index: number) => {
+    return active === index;
   };
 
   return (
-    <nav class="flex mr-[5%] justify-end flex-grow-1">
+    <nav class="hidden sm:flex mr-[5%] justify-end flex-grow-1">
       <ul class="flex list-none">
-        {items?.map((item) =>
+        {items?.map((item, index) =>
           item.showInDesktop && (
             <li>
               <a
-                class={checkActiveItem(item.link)
+                class={checkActiveItem(index)
                   ? "block font-sans text-hover uppercase py-[1em] px-[2em] text-[1.125rem] m-auto font-semibold"
                   : "block font-sans uppercase py-[1em] px-[2em] text-[1.125rem] m-auto font-semibold"}
                 href={item.link}

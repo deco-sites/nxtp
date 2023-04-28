@@ -12,7 +12,6 @@ interface Props {
 
 export default function Header(props: Props) {
   const { displayMenu } = useUI();
-  const useMenuDesktop = window?.matchMedia?.("(min-width: 768px)")?.matches;
 
   const checkDisplayMenu = (okClasses: string, failClasses = "") => {
     if (displayMenu.value) {
@@ -53,18 +52,20 @@ export default function Header(props: Props) {
         dangerouslySetInnerHTML={{ __html: props.logoSvg }}
       />
 
-      {useMenuDesktop
-        ? <MenuItems items={props.navItems} socials={props.navSocials} />
-        : (
-          <>
-            <MenuButton />{" "}
-            <Navbar
-              logoSvg={props.logoSvg}
-              items={props.navItems}
-              socials={props.navSocials}
-            />
-          </>
+      <MenuItems
+        items={props.navItems}
+        socials={props.navSocials}
+        active={props.navItems.findIndex((n) =>
+          window?.location?.pathname === n.link
         )}
+      />
+
+      <MenuButton />
+      <Navbar
+        logoSvg={props.logoSvg}
+        items={props.navItems}
+        socials={props.navSocials}
+      />
     </header>
   );
 }

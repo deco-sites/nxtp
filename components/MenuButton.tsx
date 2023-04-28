@@ -31,7 +31,7 @@ export default function MenuButton() {
       title="Open Menu"
       class={checkDisplayMenu(
         "hidden",
-        "cursor-pointer btn-navbar-toggler focus:outline-none",
+        "cursor-pointer btn-navbar-toggler focus:outline-none sm:hidden",
       )}
     >
       <span class="toggler-icon"></span>

@@ -1,8 +1,8 @@
 // import Image from "deco-sites/std/components/Image.tsx";
 import { useId } from "preact/hooks";
-import { Slider, SliderDots } from "./Slider.tsx";
-import SliderControllerJS from "./SliderJS.tsx";
-import { WelcomePortfolioSlide } from "../types/index.ts";
+import { Slider, SliderDots } from "../Slider.tsx";
+import SliderControllerJS from "../SliderJS.tsx";
+import { WelcomePortfolioSlide } from "../../types/index.ts";
 
 interface Props {
   title: string;
@@ -62,7 +62,8 @@ export default function WelcomePortfolio({ slides, title }: Props) {
         <div class="hidden sm:flex justify-center self-end ml-[15%] w-full pl-[0.75rem] mb-12">
           <SliderDots>
             {slides?.map((_) => (
-              <div class="w-[8px] h-[8px] rounded-1/2 bg-dots group-disabled:bg-dots-active mx-[5px]"></div>
+              <div class="w-[8px] h-[8px] rounded-1/2 bg-dots group-disabled:bg-dots-active mx-[5px]">
+              </div>
             ))}
           </SliderDots>
         </div>
@@ -102,6 +103,7 @@ export default function WelcomePortfolio({ slides, title }: Props) {
                     src={slide.image}
                     loading="lazy"
                     width="100%"
+                    alt={slide.text.slice(0, 10)}
                   />
                 </div>
               </div>
